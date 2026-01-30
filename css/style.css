@@ -29,3 +29,32 @@ footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
 .subtitle .right {
   text-align: right;
 }
+
+/* News section */
+.news-item {
+  margin-bottom: 2em;
+}
+
+.news-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #003366;
+}
+
+.news-title:hover {
+  text-decoration: underline;
+}
+
+.news-meta {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0.3em 0 0.6em 0;
+}
+
+.news-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
