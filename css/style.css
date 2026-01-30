@@ -1,27 +1,31 @@
 
 body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header { background: #222; color: white; padding: 1em; text-align: initial; }
+header { background: #222; color: white; padding: 1.5em 0; position: relative; }
 nav a { margin: 0 1em; color: white; text-decoration: none; }
 section { padding: 2em; max-width: 900px; margin: auto; }
 h2 { border-bottom: 1px solid #ddd; padding-bottom: .5em; }
 .item { margin-bottom: 1.5em; }
 footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
 
-/* 新增一个内部居中容器 */
+
+/* 中间主体依然居中 */
 .site-header {
-  position: relative;
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Welcome 贴页面左边 */
+/* Welcome 精确定位 */
 .site-header .welcome-left {
-  position: fixed;   /* ⭐ 关键 */
-  left: 1rem;
-  top: 1rem;
-  font-size: 0.9rem;
-  color: #aaa;
-  letter-spacing: 0.05em;
-  z-index: 10;
+  position: absolute;
+  top: 1.2em;
+
+  /* ⭐ 中点在页面 1/6 处 */
+  left: 20%;
+  transform: translateX(-50%);
+
+  font-size: 1.2rem;      /* 比 subtitle 大一点 */
+  color: #ccc;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
 }
