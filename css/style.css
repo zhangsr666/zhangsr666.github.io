@@ -7,3 +7,15 @@ h2 { border-bottom: 1px solid #ddd; padding-bottom: .5em; }
 .item { margin-bottom: 1.5em; } 
 footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
 
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0.5em auto 0;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.subtitle span {
+  white-space: nowrap;
+}
