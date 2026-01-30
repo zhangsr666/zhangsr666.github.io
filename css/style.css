@@ -10,12 +10,15 @@ footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
 .subtitle {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 900px;
-  margin: 0.5em auto 0;
-  font-size: 1rem;
+  margin: 0.6em auto 0;
+  font-size: 1.05rem;
   color: #ccc;
+  text-align: left;
 }
 
 .subtitle span {
   white-space: nowrap;
 }
+
