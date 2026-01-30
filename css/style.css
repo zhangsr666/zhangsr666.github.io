@@ -8,17 +8,19 @@ h2 { border-bottom: 1px solid #ddd; padding-bottom: .5em; }
 footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
 
 .site-header {
+  position: relative;   /* 建立定位上下文 */
   max-width: 900px;
   margin: 2rem auto 3rem;
   text-align: center;
-  position: relative;
 }
 
 .site-header .welcome-left {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 0.2rem;
+  text-align: left;     /* 防止继承居中 */
   font-size: 0.9rem;
   color: #666;
   letter-spacing: 0.05em;
 }
+
