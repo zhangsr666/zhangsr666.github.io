@@ -1,31 +1,63 @@
 
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header { background: #222; color: white; padding: 1.5em 0; position: relative; }
-nav a { margin: 0 1em; color: white; text-decoration: none; }
-section { padding: 2em; max-width: 900px; margin: auto; }
-h2 { border-bottom: 1px solid #ddd; padding-bottom: .5em; }
-.item { margin-bottom: 1.5em; }
-footer { text-align: center; padding: 1em; border-top: 1px solid #ddd; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
+/* header 仍然是【全宽黑色】 */
+header {
+  background: #222;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  position: relative;   /* 给 Welcome 定位用 */
+}
 
-/* 中间主体依然居中 */
-.site-header {
+/* 只有中间内容限宽 */
+.header-inner {
   max-width: 900px;
   margin: 0 auto;
-  text-align: center;
 }
 
 /* Welcome 精确定位 */
-.site-header .welcome-left {
+.welcome-left {
   position: absolute;
-  top: 1.2em;
+  top: 1em;
 
-  /* ⭐ 中点在页面 1/6 处 */
-  left: 20%;
+  left: 16.666%;              /* 页面 1/6 */
   transform: translateX(-50%);
 
-  font-size: 1.2rem;      /* 比 subtitle 大一点 */
+  font-size: 1.3rem;
   color: #ccc;
   letter-spacing: 0.06em;
   white-space: nowrap;
 }
+
+nav a {
+  margin: 0 1em;
+  color: white;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: .5em;
+}
+
+.item {
+  margin-bottom: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  border-top: 1px solid #ddd;
+}
+
