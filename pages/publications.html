@@ -56,3 +56,40 @@
   </div>
 
 </div>
+
+
+<style>
+.research-highlights-container {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.research-highlight-item {
+  flex: 1;
+  text-align: center;
+}
+
+.research-highlight-item img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.research-highlight-item img:hover {
+  transform: scale(1.03);
+}
+
+.highlight-caption {
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .research-highlights-container {
+    flex-direction: column;
+  }
+}
+</style>
